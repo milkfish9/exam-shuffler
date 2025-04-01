@@ -12,7 +12,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            flex-direction: column;
         }
 
         .container {
@@ -22,6 +23,7 @@
             padding: 40px 60px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
             text-align: center;
+            margin-top: 40px;
         }
 
         h1 {
@@ -80,6 +82,17 @@
         .download-btn {
             margin-top: 24px;
         }
+
+        .footer {
+            margin-top: 60px;
+            padding: 20px 0;
+            font-size: 13px;
+            color: #8a7e6d;
+            border-top: 1px solid #e0d8c6;
+            text-align: center;
+            line-height: 1.6;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -99,6 +112,12 @@
         </div>
 
         <div class="note">請上傳符合格式的 Excel 題庫檔案（包含題號、題目、A～D選項、正解）</div>
+    </div>
+
+    <div class="footer">
+        <p>網站製作：milkfish9🐟</p>
+        <p>用途：將選擇題題目與選項順序隨機重排，避免學生背誦答案位置</p>
+        <p>技術支援：Flask + Python + GitHub + Render</p>
     </div>
 </body>
 </html>
